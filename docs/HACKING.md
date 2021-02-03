@@ -13,7 +13,7 @@ docker run  -it --rm \
             -e NODE_ENV=dev \
             -e APP_ID=aaa \
             -e WEBHOOK_SECRET=bbb \
-            -e PRIVATE_KEY=$(echo abcd|base64) \
+            -e PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----$(echo someprivatestring|base64)-----END RSA PRIVATE KEY-----" \
             -p 3000:3000 probot-hello npm start
 ```
 
@@ -27,7 +27,7 @@ our app with the latest changes.
 ```
 docker run  -it --rm \
             -e APP_ID=abc \
-            -e PRIVATE_KEY=none \
+            -e PRIVATE_KEY="-----BEGIN RSA PRIVATE KEY-----$(echo someprivatestring|base64)-----END RSA PRIVATE KEY-----" \
             -w /home/node/probot-hello-dev \
             -v "$(pwd)":/home/node/probot-hello-dev \
             -p 3000:3000 probot-hello \
