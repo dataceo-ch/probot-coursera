@@ -9,7 +9,6 @@ script:
 - docker run --rm probot-hello npm run test
 - docker run --rm probot-hello npm run lint
 deploy:
-  matrix:
   - provider: heroku
   api_key:
     secure: iILygw1dPyKz1l4TYddVgMrcGl3tgSRtn3qjocdujGcG/qS0GUj/MxOgvgsf+8jTV0DyxUxY/EYycluSOFMriTRfEJA3gtJYtaSy/cN/SoZnoPo4iDnpsxEvVSoNpFg3TZivLEcqKX1OGZ+WAK9n4jf2lLEK59MPn6UBJVw17HEzm/TCwAiEbZ1xezadcjoKqHjPiWVDC3njAP4EsOtD9o2jn9/J6D6Z/Kkaf6Ru/30e7xQ5CQFngMdeI7MODb7mHdxgcW1lhABl0n8aXPXfmlPLWHWJOQb17zmC6p4nopx6IJYPlXjqoNltBZ6JD4/b0z9VMTMdNqzhdUITI/LvRzocvSMlianqv22qcGJ/V2FnAKz0SWy5lr3yAJnZBx8HFaQr5aX3vnBnhvd9P6YjUdyAX8cSrqEx4ZPvNHBN40dp4LBXycGx3QahtfEeb5vnUomOK84Lw90j403S836/hOkwh4j//jj4vXTusra9jjxw7jKS+c6S35FWa735zMtwpNC4h9esjJeku4baS6UDPbD1F0Ryrhstgpen61zcyzNnpXTkLWNwcNx+0Hzv3dQqIDgaSKonVKowNgJX73he2fjBVbq0og/ULIh557cWAl+Nls3z+cAEfgQ42p0Gjk9/ivMFx6EuTmsBOON6ktdIGXvAyB/EbwdOqTBKK3kf3pA=
