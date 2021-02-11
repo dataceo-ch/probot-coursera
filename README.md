@@ -2,6 +2,8 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
 
+TEST #1: Check first check_run
+
 ## Setup
 
 ```sh
